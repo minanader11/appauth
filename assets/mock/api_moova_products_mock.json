@@ -1,0 +1,618 @@
+[
+  {
+    "productId": "7e8d329f-6f55-11ee-9b56-bff9bd2fbed1",
+    "productVersion": 1,
+    "productName": "Urban time travel 60 minutes",
+    "productType": "6",
+    "customerNumber": 1,
+    "sellers": [
+      {
+        "id": "FCE",
+        "name": null
+      }
+    ],
+    "productTypeDesc": "Urban travel",
+    "productStartValidity": "2023-10-23",
+    "productEndValidity": "2025-12-31",
+    "deadline": null,
+    "advanceSale": null,
+    "codeExternal": "FPCUB02",
+    "notSoldSeparately": false,
+    "scopingValidityParameters": {
+      "services": [
+        {
+          "scopingValidityParameterId": "SR.TM.Metro.0002",
+          "scopingValidityParameterName": "Underground",
+          "scopingValidityClassificationCode": "TM",
+          "scopingValidityParameterType": "SR",
+          "scopingValidityTransportModeCode": "04.01",
+          "codeExternal": "xxx2",
+          "serviceOrganisationRef": "FCE",
+          "lines": null
+        }
+      ],
+      "fareZones": [
+        {
+          "scopingValidityParameterId": "NT.TF.MU.0002",
+          "scopingValidityParameterName": "Urbana",
+          "scopingValidityParameterType": "NT",
+          "permutationKNumber": null,
+          "groupType": null,
+          "zones": []
+        }
+      ]
+    },
+    "temporalValidityParameters": [
+      {
+        "temporalValidityParameterId": "b5cae430-6f55-11ee-9b56-8700f485f315",
+        "temporalValidityParameterName": null,
+        "dayType": {
+          "name": "All week",
+          "dayTypeId": "DT_00-ALLWEEK.0002",
+          "properties": "<PropertyOfDay>\n\t<DaysOfWeek>Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday</DaysOfWeek>\n</PropertyOfDay>"
+        },
+        "datetimeBands": []
+      }
+    ],
+    "usageParameters": {
+      "validityPeriods": [
+        {
+          "usageParameterId": "82d35d39-6f54-11ee-9b56-71ff57c704c2",
+          "usageParameterName": "Valido 60 minuti dall'acquisto",
+          "typeUsageParameter": "VP",
+          "validityPeriodName": "Minutes",
+          "validityPeriodType": "T",
+          "standardDuration": 60,
+          "trigger": {
+            "usageTriggerType": "P",
+            "startValidation": null,
+            "usageTriggerPeriod": null
+          },
+          "preSaleUsageValidityPeriod": {
+            "calendarReference": null,
+            "number": null,
+            "preSaleClassCode": null,
+            "preSaleType": null
+          }
+        }
+      ],
+      "customerProfiles": [
+        {
+          "usageParameterId": "CP.BS",
+          "usageParameterName": "Base",
+          "typeUsageParameter": "CP",
+          "minimumAge": null,
+          "maximumAge": null,
+          "minimumHeight": null,
+          "maximumHeight": null,
+          "minimumIncome": null,
+          "maximumIncome": null,
+          "localResident": 0
+        }
+      ],
+      "frequenciesOfUse": [
+        {
+          "usageParameterId": "FQ.UN.0002",
+          "usageParameterName": "Unlimited",
+          "typeUsageParameter": "FQ",
+          "maximalFrequency": 9999,
+          "minimalFrequency": 1,
+          "service": {
+            "serviceId": "SR.TM.Metro.0002",
+            "serviceName": "Underground",
+            "serviceOrganisationRef": "FCE",
+            "transportModeCode": null,
+            "serviceRestriction": null
+          }
+        }
+      ],
+      "luggageSetAllowance": [],
+      "transferability": {
+        "usageParameterId": "TR.CANNOTT",
+        "usageParameterName": "can Not Transfer",
+        "typeUsageParameter": null,
+        "canTransfer": false,
+        "maximumNumberOfNamedTransferees": null
+      }
+    },
+    "scopingGeographicalParameters": {
+      "geographicalIntervals": [],
+      "distanceMatrixElements": []
+    },
+    "distributionTouchPoints": [
+      {
+        "touchPoints": [],
+        "endValidity": "2025-12-31",
+        "startValidity": "2023-10-23",
+        "distributionAssignmentId": "b664651e-6f55-11ee-9b56-a532c93a2851",
+        "distributionTouchpointType": "OBS"
+      }
+    ],
+    "promotions": [],
+    "mediaSet": [
+      {
+        "mediaTypeRef": {
+          "mediaType": "PPRS",
+          "descriptionType": "Preprinted",
+          "externalMappingCode": null,
+          "class": null,
+          "multiplicityMedia": null
+        },
+        "mediaAssignmentId": "b6467cdc-6f55-11ee-9b56-63847e33d1ac",
+        "endValidity": "2025-12-31",
+        "startValidity": "2023-10-23"
+      },
+      {
+        "mediaTypeRef": {
+          "mediaType": "VT",
+          "descriptionType": "Virtual Ticket",
+          "externalMappingCode": null,
+          "class": null,
+          "multiplicityMedia": null
+        },
+        "mediaAssignmentId": "b646cafd-6f55-11ee-9b56-ef9b67a2356a",
+        "endValidity": "2025-12-31",
+        "startValidity": "2023-10-23"
+      }
+    ],
+    "fareTable": {
+      "cells": [
+        {
+          "cellId": "b67ccf1f-6f55-11ee-9b56-3d6a76651bfe",
+          "cellName": null,
+          "ccyPrice": "E",
+          "farePrice": 1.0,
+          "points": null,
+          "priceFor": {
+            "serviceRef": {
+              "serviceId": null,
+              "serviceName": null,
+              "serviceOrganisationRef": null,
+              "transportModeCode": null
+            },
+            "fareZoneRef": {
+              "fareZoneId": "NT.TF.MU.0002",
+              "fareZoneName": "Urbana"
+            },
+            "validityPeriodRef": {
+              "validityPeriodId": null,
+              "validityPeriodName": null
+            },
+            "customerProfileRef": {
+              "customerProfileId": "CP.BS",
+              "customerProfileName": "Base"
+            },
+            "distributionTouchPointRef": {
+              "distributionTouchpointId": "OBS",
+              "distributionTouchpointName": "On board sale",
+              "distributionTouchpointType": "OBS"
+            },
+            "geographicalIntervalRef": {
+              "geographicalId": null,
+              "geographicalName": null
+            },
+            "distanceMatrixRef": {
+              "distanceMatrixElementId": null,
+              "distanceMatrixElementName": null
+            },
+            "mediaTypeRef": {
+              "mediaType": null,
+              "descriptionType": null,
+              "externalMappingCode": null,
+              "class": null,
+              "multiplicityMedia": null
+            },
+            "temporalValidityRef": {
+              "temporalValidityId": "b5cae430-6f55-11ee-9b56-8700f485f315",
+              "temporalValidityName": null
+            },
+            "fixedCost": null
+          }
+        }
+      ]
+    },
+    "fareFrame": {
+      "fareFrameId": "MOOVA.FCE.V2",
+      "fareFrameName": "Ferrovia Circumetnea",
+      "organisations": [
+        {
+          "organisationName": "Azienda Metropolitana Trasporti e Sosta Catania S.p.A.",
+          "organisationId": "AMT",
+          "publicCode": null,
+          "organisationTypeCode": "OW",
+          "agreements": [
+            {
+              "agreementId": "SA-AMT-AMT-001",
+              "agreementType": "SA",
+              "organisationIdMaster": "AMT",
+              "organisationIdSecondary": "AMT",
+              "agreementDate": null
+            },
+            {
+              "agreementId": "SL-AMT-AMT-001",
+              "agreementType": "SL",
+              "organisationIdMaster": "AMT",
+              "organisationIdSecondary": "AMT",
+              "agreementDate": null
+            },
+            {
+              "agreementId": "CA-FCE-AMT-001",
+              "agreementType": "CA",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "AMT",
+              "agreementDate": null
+            }
+          ]
+        },
+        {
+          "organisationName": "Ferrovia Circumetnea",
+          "organisationId": "FCE",
+          "publicCode": null,
+          "organisationTypeCode": "OW",
+          "agreements": [
+            {
+              "agreementId": "CA-FCE-FCE-001",
+              "agreementType": "CA",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "FCE",
+              "agreementDate": null
+            },
+            {
+              "agreementId": "SA-FCE-FCE-001",
+              "agreementType": "SA",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "FCE",
+              "agreementDate": null
+            }
+          ]
+        },
+        {
+          "organisationName": "Punto Vendita Terzo",
+          "organisationId": "PVT",
+          "publicCode": null,
+          "organisationTypeCode": null,
+          "agreements": [
+            {
+              "agreementId": "SL-FCE-PVT-001",
+              "agreementType": "SL",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "PVT",
+              "agreementDate": null
+            }
+          ]
+        }
+      ],
+      "fareProducts": null,
+      "salesPackages": null
+    },
+    "roundTrip": false,
+    "bookingIsNeeded": false,
+    "antiPassbackLimit": null,
+    "validationNetworkElements": null,
+    "genericParameters": [
+      {
+        "id": "b62d287b-6f55-11ee-9b56-bda56ce3d4fa",
+        "value": "1",
+        "typeParameter": {
+          "id": "CUSTNUM",
+          "description": "Number of Customer",
+          "frontEndUserBehavior": null,
+          "backEndBehavior": null,
+          "classPath": "PRODUCT",
+          "frontEndType": "NUMBER",
+          "backEndType": "NUMBER"
+        },
+        "externalCode": "b62d287a-6f55-11ee-9b56-b9816f12996b"
+      }
+    ],
+    "noteProdInfo": ""
+  },
+  {
+    "productId": "7e8d329f-6f55-11ee-9b56-bff9bd2fbed0",
+    "productVersion": 1,
+    "productName": "Urban time travel 90 minutes",
+    "productType": "6",
+    "customerNumber": 1,
+    "sellers": [
+      {
+        "id": "FCE",
+        "name": null
+      }
+    ],
+    "productTypeDesc": "Urban travel",
+    "productStartValidity": "2023-10-23",
+    "productEndValidity": "2025-12-31",
+    "deadline": null,
+    "advanceSale": null,
+    "codeExternal": "FPCUB01",
+    "notSoldSeparately": false,
+    "scopingValidityParameters": {
+      "services": [
+        {
+          "scopingValidityParameterId": "SR.TM.Metro.0002",
+          "scopingValidityParameterName": "Underground",
+          "scopingValidityClassificationCode": "TM",
+          "scopingValidityParameterType": "SR",
+          "scopingValidityTransportModeCode": "04.01",
+          "codeExternal": "xxx2",
+          "serviceOrganisationRef": "FCE",
+          "lines": null
+        }
+      ],
+      "fareZones": [
+        {
+          "scopingValidityParameterId": "NT.TF.MU.0002",
+          "scopingValidityParameterName": "Urbana",
+          "scopingValidityParameterType": "NT",
+          "permutationKNumber": null,
+          "groupType": null,
+          "zones": []
+        }
+      ]
+    },
+    "temporalValidityParameters": [
+      {
+        "temporalValidityParameterId": "b5cae430-6f55-11ee-9b56-8700f485f315",
+        "temporalValidityParameterName": null,
+        "dayType": {
+          "name": "All week",
+          "dayTypeId": "DT_00-ALLWEEK.0002",
+          "properties": "<PropertyOfDay>\n\t<DaysOfWeek>Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday</DaysOfWeek>\n</PropertyOfDay>"
+        },
+        "datetimeBands": []
+      }
+    ],
+    "usageParameters": {
+      "validityPeriods": [
+        {
+          "usageParameterId": "82d35d39-6f54-11ee-9b56-71ff57c704c2",
+          "usageParameterName": "Valido 90 minuti dall'acquisto",
+          "typeUsageParameter": "VP",
+          "validityPeriodName": "Minutes",
+          "validityPeriodType": "T",
+          "standardDuration": 90,
+          "trigger": {
+            "usageTriggerType": "P",
+            "startValidation": null,
+            "usageTriggerPeriod": null
+          },
+          "preSaleUsageValidityPeriod": {
+            "calendarReference": null,
+            "number": null,
+            "preSaleClassCode": null,
+            "preSaleType": null
+          }
+        }
+      ],
+      "customerProfiles": [
+        {
+          "usageParameterId": "CP.BS",
+          "usageParameterName": "Base",
+          "typeUsageParameter": "CP",
+          "minimumAge": null,
+          "maximumAge": null,
+          "minimumHeight": null,
+          "maximumHeight": null,
+          "minimumIncome": null,
+          "maximumIncome": null,
+          "localResident": 0
+        }
+      ],
+      "frequenciesOfUse": [
+        {
+          "usageParameterId": "FQ.UN.0002",
+          "usageParameterName": "Unlimited",
+          "typeUsageParameter": "FQ",
+          "maximalFrequency": 9999,
+          "minimalFrequency": 1,
+          "service": {
+            "serviceId": "SR.TM.Metro.0002",
+            "serviceName": "Underground",
+            "serviceOrganisationRef": "FCE",
+            "transportModeCode": null,
+            "serviceRestriction": null
+          }
+        }
+      ],
+      "luggageSetAllowance": [],
+      "transferability": {
+        "usageParameterId": "TR.CANNOTT",
+        "usageParameterName": "can Not Transfer",
+        "typeUsageParameter": null,
+        "canTransfer": false,
+        "maximumNumberOfNamedTransferees": null
+      }
+    },
+    "scopingGeographicalParameters": {
+      "geographicalIntervals": [],
+      "distanceMatrixElements": []
+    },
+    "distributionTouchPoints": [
+      {
+        "touchPoints": [],
+        "endValidity": "2025-12-31",
+        "startValidity": "2023-10-23",
+        "distributionAssignmentId": "b664651e-6f55-11ee-9b56-a532c93a2851",
+        "distributionTouchpointType": "OBS"
+      }
+    ],
+    "promotions": [],
+    "mediaSet": [
+      {
+        "mediaTypeRef": {
+          "mediaType": "PPRS",
+          "descriptionType": "Preprinted",
+          "externalMappingCode": null,
+          "class": null,
+          "multiplicityMedia": null
+        },
+        "mediaAssignmentId": "b6467cdc-6f55-11ee-9b56-63847e33d1ac",
+        "endValidity": "2025-12-31",
+        "startValidity": "2023-10-23"
+      },
+      {
+        "mediaTypeRef": {
+          "mediaType": "VT",
+          "descriptionType": "Virtual Ticket",
+          "externalMappingCode": null,
+          "class": null,
+          "multiplicityMedia": null
+        },
+        "mediaAssignmentId": "b646cafd-6f55-11ee-9b56-ef9b67a2356a",
+        "endValidity": "2025-12-31",
+        "startValidity": "2023-10-23"
+      }
+    ],
+    "fareTable": {
+      "cells": [
+        {
+          "cellId": "b67ccf1f-6f55-11ee-9b56-3d6a76651bfe",
+          "cellName": null,
+          "ccyPrice": "E",
+          "farePrice": 1.0,
+          "points": null,
+          "priceFor": {
+            "serviceRef": {
+              "serviceId": null,
+              "serviceName": null,
+              "serviceOrganisationRef": null,
+              "transportModeCode": null
+            },
+            "fareZoneRef": {
+              "fareZoneId": "NT.TF.MU.0002",
+              "fareZoneName": "Urbana"
+            },
+            "validityPeriodRef": {
+              "validityPeriodId": null,
+              "validityPeriodName": null
+            },
+            "customerProfileRef": {
+              "customerProfileId": "CP.BS",
+              "customerProfileName": "Base"
+            },
+            "distributionTouchPointRef": {
+              "distributionTouchpointId": "OBS",
+              "distributionTouchpointName": "On board sale",
+              "distributionTouchpointType": "OBS"
+            },
+            "geographicalIntervalRef": {
+              "geographicalId": null,
+              "geographicalName": null
+            },
+            "distanceMatrixRef": {
+              "distanceMatrixElementId": null,
+              "distanceMatrixElementName": null
+            },
+            "mediaTypeRef": {
+              "mediaType": null,
+              "descriptionType": null,
+              "externalMappingCode": null,
+              "class": null,
+              "multiplicityMedia": null
+            },
+            "temporalValidityRef": {
+              "temporalValidityId": "b5cae430-6f55-11ee-9b56-8700f485f315",
+              "temporalValidityName": null
+            },
+            "fixedCost": null
+          }
+        }
+      ]
+    },
+    "fareFrame": {
+      "fareFrameId": "MOOVA.FCE.V2",
+      "fareFrameName": "Ferrovia Circumetnea",
+      "organisations": [
+        {
+          "organisationName": "Azienda Metropolitana Trasporti e Sosta Catania S.p.A.",
+          "organisationId": "AMT",
+          "publicCode": null,
+          "organisationTypeCode": "OW",
+          "agreements": [
+            {
+              "agreementId": "SA-AMT-AMT-001",
+              "agreementType": "SA",
+              "organisationIdMaster": "AMT",
+              "organisationIdSecondary": "AMT",
+              "agreementDate": null
+            },
+            {
+              "agreementId": "SL-AMT-AMT-001",
+              "agreementType": "SL",
+              "organisationIdMaster": "AMT",
+              "organisationIdSecondary": "AMT",
+              "agreementDate": null
+            },
+            {
+              "agreementId": "CA-FCE-AMT-001",
+              "agreementType": "CA",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "AMT",
+              "agreementDate": null
+            }
+          ]
+        },
+        {
+          "organisationName": "Ferrovia Circumetnea",
+          "organisationId": "FCE",
+          "publicCode": null,
+          "organisationTypeCode": "OW",
+          "agreements": [
+            {
+              "agreementId": "CA-FCE-FCE-001",
+              "agreementType": "CA",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "FCE",
+              "agreementDate": null
+            },
+            {
+              "agreementId": "SA-FCE-FCE-001",
+              "agreementType": "SA",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "FCE",
+              "agreementDate": null
+            }
+          ]
+        },
+        {
+          "organisationName": "Punto Vendita Terzo",
+          "organisationId": "PVT",
+          "publicCode": null,
+          "organisationTypeCode": null,
+          "agreements": [
+            {
+              "agreementId": "SL-FCE-PVT-001",
+              "agreementType": "SL",
+              "organisationIdMaster": "FCE",
+              "organisationIdSecondary": "PVT",
+              "agreementDate": null
+            }
+          ]
+        }
+      ],
+      "fareProducts": null,
+      "salesPackages": null
+    },
+    "roundTrip": false,
+    "bookingIsNeeded": false,
+    "antiPassbackLimit": null,
+    "validationNetworkElements": null,
+    "genericParameters": [
+      {
+        "id": "b62d287b-6f55-11ee-9b56-bda56ce3d4fa",
+        "value": "1",
+        "typeParameter": {
+          "id": "CUSTNUM",
+          "description": "Number of Customer",
+          "frontEndUserBehavior": null,
+          "backEndBehavior": null,
+          "classPath": "PRODUCT",
+          "frontEndType": "NUMBER",
+          "backEndType": "NUMBER"
+        },
+        "externalCode": "b62d287a-6f55-11ee-9b56-b9816f12996b"
+      }
+    ],
+    "noteProdInfo": ""
+  }
+]
