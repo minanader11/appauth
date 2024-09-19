@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <base-config>
+<!--        <trust-anchors>-->
+<!--            <certificates src="system" />-->
+<!--            <certificates src="user" />-->
+<!--        </trust-anchors>-->
         <trust-anchors>
-            <certificates src="system" />
-            <certificates src="user" />
+            <certificates src="@raw/fnd_identitymanager_mw_identityserver_uctss_fnd_uctssvil_corp"/>
         </trust-anchors>
     </base-config>
 </network-security-config>

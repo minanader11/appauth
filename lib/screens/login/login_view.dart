@@ -180,7 +180,7 @@ class _LoginViewState extends State<LoginView> {
                                     .response!.accessToken.isNotEmpty) {
                                   //replace global variable with save in storage
                                   //  globals.user = responseLogin.response!;
-                                  print(responseLogin.response!);
+                                  print("bearer ${responseLogin.response!.accessToken}");
                                   AppRoutes.ticketType.pushName();
                                 }
 
